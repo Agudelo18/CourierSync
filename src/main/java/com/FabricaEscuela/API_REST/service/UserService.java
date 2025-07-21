@@ -65,4 +65,16 @@ public class UserService {
     private UserDTO mapToDto(User user) {
         return new UserDTO(user.getUserId(), user.getName(), user.getEmail(), user.getRole().getName());
     }
+
+    public User getUserById(Long id) {
+        return userRepository.findById(id).orElse(null);
+    }
+
+    public User createUser(String name, String email) {
+        User user = new User();
+        user.setName(name);
+        user.setEmail(email);
+        return userRepository.save(user);
+    }
+
 }
