@@ -1,0 +1,16 @@
+"""Representa un usuario del sistema"""
+type User {
+  id: ID!
+  name: String!
+  email: String!
+}
+
+type Query {
+  """Obtiene un usuario por ID"""
+  getUserById(id: ID!): User
+}
+
+type Mutation {
+  """Crea un nuevo usuario"""
+  createUser(name: String!, email: String!): User
+}

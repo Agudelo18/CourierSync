@@ -7,9 +7,11 @@
 - Jonatan Romero Arrieta  
 
 ### 👨‍🏫 Profesor:
-- Diego José Botia Valderrama
-  
- Universidad de Antioquia – Facultad de Ingeniería
+
+- Diego Botia
+- 
+- Universidad de Antioquia – Facultad de Ingeniería
+
 
 ---
 
@@ -66,11 +68,12 @@ La feature **"Optimización de Rutas"** forma parte del sistema **CourierSync**,
 
 ---
 
-## 📦 Vista de Paquetes
+
 
 ![Paquetes](./img/paquetes.jpg)
 
 El backend está dividido en los siguientes paquetes:
+
 
 - `controller`: Manejo de endpoints HTTP  
 - `service`: Lógica del sistema (negocio)  
@@ -83,8 +86,14 @@ El backend está dividido en los siguientes paquetes:
 ---
 
 ## 🧩 Vista de Componentes
+![Componentes](./img/componentes.jpg)
+Relaciones entre paquetes principales:
+
+
+
 
 ![Componentes](./img/componentes.jpg)
+
 
 Relaciones entre paquetes principales:
 
@@ -143,11 +152,14 @@ Se configuró monitoreo a nivel de aplicación usando contenedores Docker.
 | Grafana     | 3001   | Visualización de métricas  |
 
 
----
+
+La aplicación backend está dockerizada con:
+
 
 ## 📦 Docker y Despliegue
 
 La aplicación backend está dockerizada con:
+
 
 - `Dockerfile` para construir la imagen del backend.
 - `docker-compose.yml` que orquesta los contenedores de:
@@ -155,6 +167,7 @@ La aplicación backend está dockerizada con:
   - Prometheus
   - Grafana
   - PostgreSQL
+
 
 ### 🖼️ Evidencias disponibles:
 - ✅ Prometheus detecta el target `springboot` como **UP**.
@@ -184,6 +197,7 @@ La aplicación backend está dockerizada con:
 - **GitHub Codespaces** (entorno de desarrollo)
 
 ---
+
 
 > Elaborado como parte del **Sprint 2** del proyecto **CourierSync – Arquitectura de Software 2025**.
 
