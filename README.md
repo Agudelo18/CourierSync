@@ -7,9 +7,11 @@
 - Jonatan Romero Arrieta  
 
 ### 👨‍🏫 Profesor:
+
 - Diego Botia
 - 
 - Universidad de Antioquia – Facultad de Ingeniería
+
 
 ---
 
@@ -66,9 +68,12 @@ La feature **"Optimización de Rutas"** forma parte del sistema **CourierSync**,
 
 ---
 
-## 📦 Vista de Paquetes
+
+
 ![Paquetes](./img/paquetes.jpg)
+
 El backend está dividido en los siguientes paquetes:
+
 
 - `controller`: Manejo de endpoints HTTP  
 - `service`: Lógica del sistema (negocio)  
@@ -86,12 +91,22 @@ Relaciones entre paquetes principales:
 
 
 
+
+![Componentes](./img/componentes.jpg)
+
+
+Relaciones entre paquetes principales:
+
+
+
 > Esta vista representa las dependencias entre los módulos lógicos del backend.
 
 ---
 
 ## 🌐 Vista de Despliegue
+
 ![Despliegue](./img/despliegue.jpg)
+
 El sistema está desplegado en tres entornos distintos:
 
 | Componente   | Plataforma | Tecnología |
@@ -118,6 +133,9 @@ Listado base de endpoints:
 | PUT    | /roles/{id}          | Actualizar rol              |
 | DELETE | /roles/{id}          | Eliminar rol                |
 | GET    | /roles               | Listar roles disponibles    |
+
+## Implementación con openAPI/Swagger:
+
 ![Swagger](./img/swagger.jpg)
 
 > 🔐 Todos los endpoints protegidos requieren token JWT con rol de `ADMINISTRATOR`.
@@ -133,14 +151,15 @@ Se configuró monitoreo a nivel de aplicación usando contenedores Docker.
 | Prometheus  | 9090   | Recolector de métricas     |
 | Grafana     | 3001   | Visualización de métricas  |
 
-La aplicación expone métricas en el endpoint:  
 
 
----
+La aplicación backend está dockerizada con:
+
 
 ## 📦 Docker y Despliegue
 
 La aplicación backend está dockerizada con:
+
 
 - `Dockerfile` para construir la imagen del backend.
 - `docker-compose.yml` que orquesta los contenedores de:
@@ -148,6 +167,7 @@ La aplicación backend está dockerizada con:
   - Prometheus
   - Grafana
   - PostgreSQL
+
 
 ### 🖼️ Evidencias disponibles:
 - ✅ Prometheus detecta el target `springboot` como **UP**.
@@ -177,6 +197,7 @@ La aplicación backend está dockerizada con:
 - **GitHub Codespaces** (entorno de desarrollo)
 
 ---
+
 
 > Elaborado como parte del **Sprint 2** del proyecto **CourierSync – Arquitectura de Software 2025**.
 
