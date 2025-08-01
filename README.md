@@ -86,17 +86,10 @@ El backend está dividido en los siguientes paquetes:
 ---
 
 ## 🧩 Vista de Componentes
-![Componentes](./img/componentes.jpg)
-Relaciones entre paquetes principales:
-
-
-
 
 ![Componentes](./img/componentes.jpg)
 
-
 Relaciones entre paquetes principales:
-
 
 
 > Esta vista representa las dependencias entre los módulos lógicos del backend.
